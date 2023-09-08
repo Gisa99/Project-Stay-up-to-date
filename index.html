@@ -9,7 +9,14 @@
   <link rel="stylesheet" href="assets/CSS/formulário.css">
   <link rel="stylesheet" href="assets/CSS/card.css">
   <link rel="stylesheet" href="assets/CSS/base.css">
-  
+  <link rel="stylesheet" href="assets/CSS/titulo.css">
+  <link rel="stylesheet" href="assets/CSS/list-item.css">
+  <link rel="stylesheet" href="assets/CSS/email.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
 </head>
@@ -19,28 +26,33 @@
     <div class="card">
       <div class="formulario">
         <div class="text">
-          <h1>Stay Updated</h1>
-          <p>Join 60.000 + product managers receiving monthly updates on:</p>
+          <h1>Stay Updated!</h1>
+          <p class="subtitle">Join 60.000 + product managers receiving monthly updates on:</p>
           <ul>
-            <li>
+            <li class="list-item">
               <img src="assets/images/icon-list.svg" alt="icone da lista">
               <p>Product discovery and building what matters</p>
             </li>
-            <li>
+            <li class="list-item">
               <img src="assets/images/icon-list.svg" alt="icone da lista">
               <p>Measuring to ensure updatesre a succes</p>
             </li>
-            <li>
+            <li class="list-item">
               <img src="assets/images/icon-list.svg" alt="icone da lista">
               <p>And much more!</p>
             </li>   
           </ul>
         </div>
         <div class="email">
-          <form action="">
-            <label for="email">Email address</label>
-            <input id="email" type="text" placeholder="email@company.com">
-            <button>Subscribe to monthly newsletter</button>
+          <form action="" data-formulario>
+            <div class="labels">
+              <label for="email">Email address</label>
+              <span class="mensagem-erro"></span>
+            </div>
+      
+              <input  id="email" name="email" type="text" placeholder="email@company.com" minlength="11"  required>
+              <button data-envio >Subscribe to monthly newsletter</button>
+          
 
 
           </form>
@@ -60,5 +72,7 @@
       Coded by <a href="#">Your Name Here</a>.
     </div>
   </footer>
+
+  <script src="assets/JS/script.js"></script>
 </body>
 </html>

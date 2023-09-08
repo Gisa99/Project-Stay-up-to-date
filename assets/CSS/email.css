@@ -1,0 +1,55 @@
+.email form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.email label{
+    font-weight: 700;
+}
+
+.email input{
+    padding: 15px;
+    border: 1px solid #23274277;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+
+
+.labels{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+span{
+    font-size: 11px;
+    color: red;
+    font-weight: 700;   
+}
+
+input:focus, select:focus {
+    box-shadow: 0px 0.8px 0px 1px #232742f1;;
+    border: 0 none;
+    outline: 0;
+} 
+
+button{
+    padding: 15px;
+    background-color: #232742;
+    border: none;
+    border-radius: 5px;
+    color: #ffff;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+
+button:hover{
+    background: linear-gradient(#d64e55, #ff634e);
+    color: #ffff;
+    font-weight: 500;
+
+}
