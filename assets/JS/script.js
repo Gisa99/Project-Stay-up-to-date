@@ -1,19 +1,21 @@
 const camposDoFormulario = document.querySelectorAll("[required]");
 const formulario = document.querySelector("[data-formulario]");
-const campoEmail = document.querySelector('#email');
-
 
 
 formulario.addEventListener("submit", (e)=>{
   e.preventDefault();
+  
+  const campoEmail = document.querySelector('[name="email"]').value;
 
   const listaRespostas ={
-    "email": e.target.elements["email"].value,
+    "email": campoEmail,
    
   }
   localStorage.setItem("cadastro", JSON.stringify(listaRespostas));
+  localStorage.setItem("email", campoEmail);
+  
 
-  window.location = 'envioFormOk.html';
+  window.location = `assets/Pages/succes.html?email=${campoEmail}`;
 
 })
 
@@ -71,4 +73,6 @@ camposDoFormulario.forEach((campo) => {
      
   }
 
+
+  
  
