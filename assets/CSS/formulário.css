@@ -5,3 +5,8 @@
     flex-direction: column;
     row-gap: 2rem;
 }
+@media(min-width: 0px) and (max-width: 768px){
+    .formulario{
+        padding: 0 20px 0px 10px ;
+    }
+}

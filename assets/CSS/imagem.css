@@ -5,3 +5,15 @@
     width: 400px;
 
 }
+
+@media (min-width: 0) and (max-width: 768px){
+    .imagem{
+        background: url(../images/mobil-back.png);
+        background-position: center center;
+        background-size: cover;
+        border-radius: 0px 0px 18px 18px;
+        order: -1;
+        width: 100vw; 
+        height: 35vh; 
+    }
+}
